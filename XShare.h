@@ -9,26 +9,34 @@ extern "C" {
 #endif
 /*
  * Class:     XShare
- * Method:    sayHello
- * Signature: ()V
- */
-JNIEXPORT void JNICALL Java_XShare_sayHello
-  (JNIEnv *, jobject);
-
-/*
- * Class:     XShare
- * Method:    sumArray
+ * Method:    J2C_WrBuffer
  * Signature: ([B)I
  */
-JNIEXPORT jint JNICALL Java_XShare_sumArray
+JNIEXPORT jint JNICALL Java_XShare_J2C_1WrBuffer
   (JNIEnv *, jobject, jbyteArray);
 
 /*
  * Class:     XShare
- * Method:    GetArray
+ * Method:    C2J_WrCache
+ * Signature: ([B)I
+ */
+JNIEXPORT jint JNICALL Java_XShare_C2J_1WrCache
+  (JNIEnv *, jobject, jbyteArray);
+
+/*
+ * Class:     XShare
+ * Method:    J2C_RdBuffer
  * Signature: ()[B
  */
-JNIEXPORT jbyteArray JNICALL Java_XShare_GetArray
+JNIEXPORT jbyteArray JNICALL Java_XShare_J2C_1RdBuffer
+  (JNIEnv *, jobject);
+
+/*
+ * Class:     XShare
+ * Method:    C2J_RdCache
+ * Signature: ()[B
+ */
+JNIEXPORT jbyteArray JNICALL Java_XShare_C2J_1RdCache
   (JNIEnv *, jobject);
 
 #ifdef __cplusplus

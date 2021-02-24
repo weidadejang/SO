@@ -4,13 +4,16 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../XShare.c 
+../XShare.c \
+../Xmem.c 
 
 OBJS += \
-./XShare.o 
+./XShare.o \
+./Xmem.o 
 
 C_DEPS += \
-./XShare.d 
+./XShare.d \
+./Xmem.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

@@ -4,11 +4,12 @@ import java.util.TimerTask;
 
 public class XShare
 {
-    public native void sayHello();
-    //数组下发 赋值
-    private native int sumArray(byte[] arr);
+    //数组下发 赋值 
+    private native int J2C_WrBuffer(byte[] arr);
+    private native int C2J_WrCache(byte[] arr);
     //数组上传 取值
-    private native byte[] GetArray();
+    private native byte[] J2C_RdBuffer();
+    private native byte[] C2J_RdCache();
 
     static{
         System.out.println(System.getProperty("java.library.path"));
@@ -35,7 +36,7 @@ public class XShare
 		//System.out.println("现在是：" + new Date());
 		*/
 
-		byte[] result = h.GetArray();
+		byte[] result = h.J2C_RdBuffer();
 		String str = "Get res:";	
 		for(int i = 0, s = result.length; i < s; i++) {
 		    str += ((int) result[i]);
