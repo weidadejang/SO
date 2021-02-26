@@ -16,7 +16,7 @@ public class XShare
      	System.load("/root/Esl5/ProXShare/Debug/libProXShare.so");    //使用绝对路径加载名称为goodluck.so的库文件
     }
 
-    private static int x = 4050;
+    private static int x = 13000;
 
     public static void main(String[] args)
     {
@@ -24,18 +24,25 @@ public class XShare
 	Timer timer = new Timer();  
         timer.schedule(new TimerTask() {  
             public void run() {  
-                /*
+		
+		//write                
+		
 		byte[] arr = new byte[x];
 		for (int i = 0; i < arr.length; i++) {
-			arr[i] = (byte)((i+6) & 0xFF);
+			//arr[i] = (byte)((i+6) & 0xFF);
+			if(i<3500)	arr[i] = 2;
+			else if((i>=3500) && (i<7000)) arr[i] = 100;
+			else		arr[i] = 78;	
 		}
-		int sum = h.sumArray(arr);
-		System.out.println("sum = " + sum + "  x = " + x);
+		int sum = h.J2C_WrBuffer(arr);
+		//System.out.println("sum = " + sum + "  x = " + x);
 		//x = x + 1;
 		//h.sayHello();
 		//System.out.println("现在是：" + new Date());
-		*/
+		
 
+		//READ
+		/*
 		byte[] result = h.J2C_RdBuffer();
 		String str = "Get res:";	
 		for(int i = 0, s = result.length; i < s; i++) {
@@ -43,6 +50,7 @@ public class XShare
 	            str += " ";
 		}
 		System.out.println(str);
+		*/
             }  
         }, 10,10);// 设定指定的时间time,此处为2000毫秒  
     }

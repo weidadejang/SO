@@ -16,4 +16,8 @@
 #define SIG_MEM_SIZE  4050
 #define TOT_MEM 	  50
 
+
+int MEMBlockWR(key_t Name,uint8_t *buf,int len);
+int MEMBlockRD(key_t Name,uint8_t *buf,int NeedRdblock);
+
 #endif /* XMEM_H_ */

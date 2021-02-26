@@ -34,8 +34,8 @@
 								<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.so.debug.option.optimization.level.870995333" name="Optimization Level" superClass="gnu.c.compiler.so.debug.option.optimization.level" valueType="enumerated"/>
 								<option id="gnu.c.compiler.so.debug.option.debugging.level.1177597697" name="Debug Level" superClass="gnu.c.compiler.so.debug.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.include.paths.1981267372" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
-									<listOptionValue builtIn="false" value="/usr/local/Java/jdk1.8.0_201/include/linux"/>
-									<listOptionValue builtIn="false" value="/usr/local/Java/jdk1.8.0_201/include"/>
+									<listOptionValue builtIn="false" value="/usr/local/java/jdk1.8.0_201/include"/>
+									<listOptionValue builtIn="false" value="/usr/local/java/jdk1.8.0_201/include/linux"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.336070240" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
 							</tool>
